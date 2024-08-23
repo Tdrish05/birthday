@@ -1,0 +1,371 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0C0E23;
+    color: #F2E9E4;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+
+* {
+    transition: all 0.8s ease-in-out;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(180deg, rgba(10, 10, 50, 0.8), rgba(0, 0, 20, 0.9)), 
+                url('starry_bg2.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.landing h1 {
+    font-size: 4.5rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #d1a71d;
+    animation: glow 1.8s infinite alternate;
+}
+
+.landing h3 {
+    font-size: 2.2rem;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    color: #8b7c31;
+    text-decoration: underline 0.8px;
+}
+
+.landing p {
+    font-size: 1.5rem;
+    margin-top: 90px;
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    backdrop-filter: blur(6px);
+    background-color: rgba(85, 74, 74, 0.1);
+    animation: fadeIn 10s infinite forwards 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.msg {
+    display: inline;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}    
+
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(247, 210, 5, 0.884), 0 0 30px rgba(131, 111, 67, 0.5);
+    }
+    to {
+        text-shadow: 0 0 30px rgba(22, 166, 223, 0.884), 0 0 60px rgb(143, 168, 182);
+    }
+}
+
+/* Memories Section */
+.memories {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 20, 0.9), rgb(11, 15, 59)), url('soft_clouds.jpeg') no-repeat center center/cover;
+}
+
+.memories h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FFDEE9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.box {
+    width: 350px;
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 1px 5px 25px rgba(188, 192, 168, 0.5);
+    transition: transform 0.8s ease-in-out;
+    opacity: 0.79;
+}
+
+.box:hover {
+    transform: scale(1.11) rotate(-3deg);
+    box-shadow: 0 12px 32px rgba(147, 240, 243, 0.8);
+    opacity: 8;
+}
+
+/* Messages Section */
+.messages {
+    padding: 70px 10px;
+    text-align: center;
+    background: linear-gradient(180deg, rgb(11, 15, 59), #13132B);
+}
+
+.messages h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FFEC99;
+}
+
+.blessings {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.txt {
+    padding: 12px;
+    width: 76%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+#btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFDEE9;
+    color: #0C0E23;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.4s ease;
+}
+
+#btn:hover  {
+    background-color: #2ed5eb;
+}
+
+/* Address Section */
+.Address {
+    padding: 60px 10px;
+    text-align: center;
+    background: linear-gradient(180deg, #13132B,  rgba(14, 6, 117, 0.692)), url('soft_starry_night.jpeg') no-repeat center center/cover;
+}
+
+.Address h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #c29da9;
+    text-decoration: underline;
+}
+
+#add {
+    font-size: 1.3rem;
+    color: #FFEC99;
+    font-style: italic;
+}
+
+#Add {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #F4EBE8;
+}
+
+/* Details Section */
+.details {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(14, 6, 117, 0.692),#15152D), url('soft_starry_night.jpeg') no-repeat center center/cover;
+    background-attachment:scroll;
+    
+}
+
+.details h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #887c94;
+    text-decoration: underline;
+}
+
+#para {
+    font-size: 1.5rem;
+    max-width: 850px;
+    margin: 0 auto;
+    color: #D9D2B6;
+}
+
+/* Message from Birthday Girl */
+.message {
+    padding: 70px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #15152D, #03075c,#010330);
+}
+
+.message h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #d4ba45;
+    text-decoration: underline;
+}
+
+.message p {
+    font-size: 1.5rem;
+    max-width: 750px;
+    margin: 0 auto;
+    color: rgba(255, 236, 153, 0.9);
+    font-style: italic;
+}
+
+/* Response Section */
+.Response {
+    padding: 70px 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #010330,  #050c5ad7,  #020425);
+    padding-left: 50px;
+}
+
+.resp1 h4{
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+.Response h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #FFDEE9;
+    text-align: center;
+    text-decoration: underline 3px;
+}
+
+.name {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;   
+}
+ .rad {
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.resp2 h4{
+    margin-top: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+.resp2 label {
+    font-size: 1.1rem;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.rad {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.resp3 h4 {
+    margin-top: 30px;
+    letter-spacing: 1.5px;
+}
+
+.resp3 input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 1rem;
+    border: 1px solid #5f5c5c;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.note{
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(1px);
+}
+
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #FFDEE9;
+    color: #0C0E23;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: #57d9f0;
+}
+
+/* footer section */
+
+.footer {
+    height: 300px;
+    background-color:  #020425;
+    color: #FFDDC1;
+    padding: 20px;
+    text-align: center;
+    border-top: 0px solid #FFDDC1;
+}
+
+.footer p {
+    margin-top: 100px;
+    font-size: 1.45rem;
+    font-style: italic;
+}
